@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Page</title>
+
+  <link rel="stylesheet" href="indexStyle.css">
+</head>
+
+<body>
+  <nav>
+    <ul id="flexbox">
+      <li class="flex-left">Header</li>
+      <li class="flex-right">
+        <a href="#" id="signUp">Signup Page</a>
+      </li>
+      <li class="flex-right">
+        <a href="#" id="profile">Profile Page</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div id="form">
+
+    <h2>Signup</h2>
+    <label for="name" class="labels">
+      <input type="text" id="name" class="left" placeholder="Full Name" required>
+    </label>
+    <hr class="bottom-border">
+    <label for="email" class="labels">
+      <input type="email" id="email" class="left" placeholder="Email" required>
+    </label>
+    <hr class="bottom-border">
+    <label for="password" class="labels">
+      <input type="password" id="password" class="left" placeholder="Password" required>
+    </label>
+    <hr class="bottom-border">
+    <label for="confirmPassword" class="labels">
+      <input type="password" id="confirmPassword" class="left" placeholder="Confirm Password" required>
+    </label>
+    <hr class="bottom-border">
+    <button type="submit" id="submit-btn">Signup</button>
+
+    <!-- Error/Success Elements -->
+    <div class="alert">
+      <div class="hidden" id="success" style="color: green;">
+        Congratulations Successfully Signed Up🎉🎉🎉🎉🎉!!!!
+      </div>
+      <div class="hidden" id="error" style="color: red;">
+        Error: ⚠️⚠️⚠️ All fields are mandatory ❌❌❌
+      </div>
+      <div class="hidden" id="passwordMismatched" style="color: red;">
+        Error: ⚠️⚠️⚠️ Password not Matching. Please enter correct password ❌❌❌
+      </div>
+      <div class="hidden" id="invalidEmail" style="color: red;">
+        Error: ⚠️⚠️⚠️ Invalid email id. Please enter correct email id ❌❌❌
+      </div>
+    </div>
+  </div>
+  <script src="indexScript.js"></script>
+</body>
+
+</html>
